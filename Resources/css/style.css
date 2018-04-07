@@ -6,7 +6,6 @@ body {
 .container {
   width: 960px;
   margin: 0 auto;
-  overflow: visible;
 }
 
 /* Header and Navigation */
