@@ -6,6 +6,7 @@ body {
 .container {
   width: 960px;
   margin: 0 auto;
+  overflow: visible;
 }
 
 /* Header and Navigation */
@@ -21,7 +22,7 @@ body {
   padding-top: 1rem;
 }
 
-.header .container {
+.nav-logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,6 +43,11 @@ body {
   padding: 1rem 2rem 1rem 0;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+
 /* Banner Text */
 
 .banner-text {
@@ -52,10 +58,8 @@ body {
   line-height: 1.2;
   color: black;
   padding: 1.5rem 5rem;
-  position: relative;
-  top: 10rem;
-  left: 42rem;
-  width: 25rem;
+  float: right;
+  margin-top: 10rem;
 }
 
 /* Icons */
@@ -95,6 +99,7 @@ body {
   margin: 3rem 0 5rem 0;
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
 }
 
 .info {
@@ -133,4 +138,107 @@ body {
 .footer img {
   height: 1.5rem;
   padding-right: 1rem;
+}
+
+/* Tablet Display */
+
+@media only screen and (max-width: 1048px) {
+
+  .container {
+    width: 100%;
+  }
+
+  .header {
+    padding-top: 0;
+    height: 22rem;
+  }
+
+  .banner-text {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+}
+
+/* Phone Display */
+
+@media only screen and (max-width: 570px) {
+
+  .container {
+    width: 100%;
+  }
+
+/* Header and Navigation */
+
+  #store-name {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .header {
+    padding-top: 0;
+    height: 17rem;
+    background-position: 20%;
+  }
+
+/* Banner Text */
+
+  .banner-text {
+    font-size: 1rem;
+    padding: 1rem 0;
+    float: none;
+    width: 100%;
+    margin-top: 9rem;
+    text-align: center;
+  }
+
+  /* Icons */
+
+  .icons {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 3.77rem 0;
+  }
+
+  .icon {
+    flex-flow: column nowrap;
+    margin: 1.54rem 0;
+  }
+
+  /* About Section */
+
+  .business-info {
+    margin: 0;
+    flex-flow: column wrap;
+  }
+  .info {
+    width: 100%;
+    margin: 1rem auto;
+  }
+  .info h1 {
+    text-align: center;
+    width: 100%;
+  }
+  .info p {
+    width: 100%;
+    font-size: 1rem;
+  }
+  #philosophy {
+    padding-bottom: 4rem;
+  }
+
+  /* Footer */
+
+  .copy-logo {
+    justify-content: center;
+  }
 }
