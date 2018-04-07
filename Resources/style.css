@@ -57,3 +57,80 @@ body {
   left: 42rem;
   width: 25rem;
 }
+
+/* Icons */
+
+.icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.icon {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 3rem;
+  text-align: center;
+  height: 8rem;
+}
+
+.exam img {
+  max-width: 3.5rem;
+}
+
+.fittings img, .delivery img {
+  max-width: 5rem;
+}
+
+.description {
+  display: block;
+}
+
+/* About Section */
+
+.business-info {
+  margin: 3rem 0 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  width: 35%;
+  margin: 0 2.5%;
+}
+
+.info h1 {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: cadetblue;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  width: 10rem;
+  margin-bottom: 1rem;
+  color: white;
+  text-transform: uppercase;
+}
+.info p {
+  width: 90%;
+}
+
+/* Footer */
+
+.footer {
+  background-color: azure;
+  margin-top: 5rem;
+}
+
+.copy-logo {
+  padding: 4rem;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.footer img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
